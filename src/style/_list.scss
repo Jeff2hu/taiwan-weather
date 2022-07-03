@@ -1,10 +1,11 @@
 .text{
   color:white;
+  width: 100%;
   &-title{
     text-align: right;
-    font-size: 40px;
+    font-size: 32px;
     border-bottom: 1px solid #666;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
   &-list{
     margin-top: 50px;
@@ -12,7 +13,24 @@
     &__title, &__weather,&__temperature,&__date{
       font-size: 24px;
       @include d-flex(space-between,flex-end);
-      margin-top: 30px;
+      margin-top: 20px;
+    }
+  }
+  @media(max-width:992px){
+    width: 65%;
+    &-list__weather,&-list__temperature{
+      font-size: 18px;
+    }
+  }
+  @media(max-width:768px){
+    width: 100%;
+  }
+  @media(max-width:576px){
+    &-title{
+      font-size: 22px;
+    }
+    &-list__weather,&-list__temperature{
+      font-size: 16px;
     }
   }
 }
