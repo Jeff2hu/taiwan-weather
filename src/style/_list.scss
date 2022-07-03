@@ -1,0 +1,18 @@
+.text{
+  color:white;
+  &-title{
+    text-align: right;
+    font-size: 40px;
+    border-bottom: 1px solid #666;
+    padding-bottom: 50px;
+  }
+  &-list{
+    margin-top: 50px;
+    font-size: 20px;
+    &__title, &__weather,&__temperature{
+      font-size: 24px;
+      @include d-flex(space-between,flex-end);
+      margin-top: 30px;
+    }
+  }
+}

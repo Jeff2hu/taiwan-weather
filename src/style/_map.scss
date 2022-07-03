@@ -1,0 +1,15 @@
+svg{
+  height: 99vh;
+}
+
+path{
+  stroke: white;
+  fill: transparent;
+  transition: 0.5s;
+  cursor: pointer;
+  &:hover{
+  fill: rgb(255, 194, 52);
+  stroke: #aaa;
+  transform: translate(-5px,-5px);
+  }
+}

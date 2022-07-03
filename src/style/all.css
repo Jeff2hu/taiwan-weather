@@ -1,0 +1,53 @@
+* {
+  font-family: "Fjalla One";
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 100px;
+}
+
+svg {
+  height: 99vh;
+}
+
+path {
+  stroke: white;
+  fill: transparent;
+  transition: 0.5s;
+  cursor: pointer;
+}
+path:hover {
+  fill: rgb(255, 194, 52);
+  stroke: #aaa;
+  transform: translate(-5px, -5px);
+}
+
+.text {
+  color: white;
+}
+.text-title {
+  text-align: right;
+  font-size: 40px;
+  border-bottom: 1px solid #666;
+  padding-bottom: 50px;
+}
+.text-list {
+  margin-top: 50px;
+  font-size: 20px;
+}
+.text-list__title, .text-list__weather, .text-list__temperature {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 30px;
+}/*# sourceMappingURL=all.css.map */
