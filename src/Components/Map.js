@@ -10,9 +10,10 @@ const Map = (props) => {
       props.setFilterData((prev)=>{
         return {...prev,
           location:filterCity[0].locationName,
-          weather:filterCity[0].weatherElement[0].time[1].parameter.parameterName,
-          minTemperature:filterCity[0].weatherElement[2].time[1].parameter.parameterName,
-          maxTemperature:filterCity[0].weatherElement[4].time[1].parameter.parameterName
+          weather:filterCity[0].weatherElement[6].time[1].elementValue[0].value,
+          time:filterCity[0].weatherElement[6].time[1].startTime,
+          minTemperature:filterCity[0].weatherElement[8].time[1].elementValue[0].value,
+          maxTemperature:filterCity[0].weatherElement[12].time[1].elementValue[0].value
         }
       })
     }
