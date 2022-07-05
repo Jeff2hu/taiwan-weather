@@ -1,0 +1,30 @@
+.nav{
+  @include d-flex(space-between);
+  margin:15px 100px;
+  .weeks{
+    @include d-flex(space-around);
+    button{
+      display: block;
+      padding: 10px 20px;
+      color:rgb(96, 173, 255);
+      font-weight: 600;
+      border:none;
+      transition: all 0.25s ease-in;
+      cursor: pointer;
+      &:hover{
+        background-color: #aaa;
+        color:white;
+      }
+    }
+  }
+  @media(max-width:992px){
+    margin:15px 30px;
+  }
+  @media(max-width:768px){
+    align-items: flex-start;
+    flex-direction: column;
+    .weeks{
+      margin-top: 15px;
+    }
+  }
+}

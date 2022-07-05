@@ -4,14 +4,14 @@
   padding: 0;
 }
 
-body {
-  background-color: #222;
+li {
+  list-style: none;
 }
 
 .wrap {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-right: 100px;
 }
 @media (max-width: 992px) {
@@ -27,11 +27,11 @@ body {
 }
 
 svg {
-  height: 100vh;
+  height: 85vh;
   width: 100%;
 }
 svg path {
-  stroke: white;
+  stroke: rgb(108, 169, 226);
   fill: transparent;
   transition: 0.5s;
   cursor: pointer;
@@ -54,12 +54,12 @@ svg path:hover {
 }
 
 .text {
-  color: white;
-  width: 100%;
+  color: black;
+  width: 70%;
 }
 .text-title {
   text-align: right;
-  font-size: 32px;
+  font-size: 30px;
   border-bottom: 1px solid #666;
   padding-bottom: 40px;
 }
@@ -68,7 +68,7 @@ svg path:hover {
   font-size: 20px;
 }
 .text-list__title, .text-list__weather, .text-list__temperature, .text-list__date {
-  font-size: 24px;
+  font-size: 22px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -85,13 +85,56 @@ svg path:hover {
 @media (max-width: 768px) {
   .text {
     width: 100%;
+    margin: 0 50px;
   }
 }
 @media (max-width: 576px) {
+  .text {
+    margin: 0;
+  }
   .text-title {
     font-size: 22px;
   }
   .text-list__weather, .text-list__temperature {
     font-size: 16px;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 100px;
+}
+.nav .weeks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav .weeks button {
+  display: block;
+  padding: 10px 20px;
+  color: rgb(96, 173, 255);
+  font-weight: 600;
+  border: none;
+  transition: all 0.25s ease-in;
+  cursor: pointer;
+}
+.nav .weeks button:hover {
+  background-color: #aaa;
+  color: white;
+}
+@media (max-width: 992px) {
+  .nav {
+    margin: 15px 30px;
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .nav .weeks {
+    margin-top: 15px;
   }
 }/*# sourceMappingURL=all.css.map */

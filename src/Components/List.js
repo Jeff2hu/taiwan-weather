@@ -1,4 +1,5 @@
 import React from 'react';
+import Nav from './Nav';
 
 const List = (props) => {
 
@@ -11,8 +12,8 @@ const List = (props) => {
       </div>
       <div className='text-list'>
         <div className="text-list__date">
-          <p>Date:</p>
-          <h2>{date.length>0?date.slice(0,10):(new Date().getMonth()+1)+"/"+(new Date().getDate())}</h2>
+          <p>Date<br></br>(18:00視為隔日):</p>
+          <h2>{date.length>0?date.slice(5,10):"日期"}</h2>
         </div>
         <div className="text-list__title">
           <p>Place:</p>
@@ -20,12 +21,12 @@ const List = (props) => {
         </div>
         <div className="text-list__weather">
           <p>Weather:</p>
-          <h3>{props.filterData.weather.length>0?props.filterData.weather:"請點擊地區"}</h3>
+          <h3>{props.filterData.weather.length>0?props.filterData.weather:"天氣狀況"}</h3>
         </div>
         <div className="text-list__temperature">
           <p>Temperature:</p>
-          <h3>{props.filterData.minTemperature.length>0?props.filterData.minTemperature:"xx"}~
-              {props.filterData.maxTemperature.length>0?props.filterData.maxTemperature:"xx"}</h3>
+          <h3>{props.filterData.minTemperature.length>0?props.filterData.minTemperature:"xx度"}~
+              {props.filterData.maxTemperature.length>0?props.filterData.maxTemperature:"xx度"}</h3>
         </div>
       </div>
     </div>
