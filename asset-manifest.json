@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/taiwan-weather/static/css/main.701d3c75.css",
-    "main.js": "/taiwan-weather/static/js/main.2f271d01.js",
+    "main.css": "/taiwan-weather/static/css/main.558ff3bf.css",
+    "main.js": "/taiwan-weather/static/js/main.33421998.js",
     "index.html": "/taiwan-weather/index.html",
-    "main.701d3c75.css.map": "/taiwan-weather/static/css/main.701d3c75.css.map",
-    "main.2f271d01.js.map": "/taiwan-weather/static/js/main.2f271d01.js.map"
+    "main.558ff3bf.css.map": "/taiwan-weather/static/css/main.558ff3bf.css.map",
+    "main.33421998.js.map": "/taiwan-weather/static/js/main.33421998.js.map"
   },
   "entrypoints": [
-    "static/css/main.701d3c75.css",
-    "static/js/main.2f271d01.js"
+    "static/css/main.558ff3bf.css",
+    "static/js/main.33421998.js"
   ]
 }
