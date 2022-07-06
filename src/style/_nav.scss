@@ -5,26 +5,34 @@
     @include d-flex(space-around);
     button{
       display: block;
-      padding: 10px 20px;
+      padding: 10px 25px;
       color:rgb(96, 173, 255);
       font-weight: 600;
       border:none;
       transition: all 0.25s ease-in;
       cursor: pointer;
-      &:hover{
+      &:hover,&:focus{
         background-color: #aaa;
         color:white;
       }
     }
   }
   @media(max-width:992px){
-    margin:15px 30px;
+    margin: 15px;
+    button{
+      padding: 10px 20px !important;
+    }
   }
   @media(max-width:768px){
     align-items: flex-start;
     flex-direction: column;
     .weeks{
       margin-top: 15px;
+    }
+  }
+  @media(max-width:576px){
+    button{
+      padding: 10px 10px !important;
     }
   }
 }

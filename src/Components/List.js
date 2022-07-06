@@ -4,6 +4,7 @@ import Nav from './Nav';
 const List = (props) => {
 
   let date = props.filterData.time;
+  let month = new Date().getMonth()+1;
 
   return (
     <div className='text'>
@@ -13,7 +14,7 @@ const List = (props) => {
       <div className='text-list'>
         <div className="text-list__date">
           <p>Date<br></br>(18:00視為隔日):</p>
-          <h2>{date.length>0?date.slice(5,10):"日期"}</h2>
+          <h2>{month}/{props.list_ClickDay}</h2>
         </div>
         <div className="text-list__title">
           <p>Place:</p>

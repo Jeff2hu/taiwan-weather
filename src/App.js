@@ -16,6 +16,7 @@ function App() {
     maxTemperature:""
   });
   let [clickDay,setClickDay] = useState(1);
+  let [list_ClickDay,setShowClickDay] = useState(new Date().getDate());
 
   const apiKey = "CWB-5047D7D3-0310-4567-9107-A2FBFA95D3D4";
   const getData = async() => {
@@ -30,10 +31,10 @@ function App() {
 
   return (
     <>
-      <Nav setClickDay={setClickDay} setFilterData={setFilterData}/>
+      <Nav setClickDay={setClickDay} setFilterData={setFilterData} setShowClickDay={setShowClickDay}/>
       <div className='wrap'>
         <Map setFilterData={setFilterData} placeData={placeData} clickDay={clickDay}/>
-        <List filterData={filterData}/>
+        <List filterData={filterData} list_ClickDay={list_ClickDay}/>
       </div>
     </>
   );
